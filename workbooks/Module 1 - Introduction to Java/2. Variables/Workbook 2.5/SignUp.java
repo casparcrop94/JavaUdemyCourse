@@ -11,26 +11,32 @@ public class SignUp {
         System.out.println("Welcome to JavaGram! Let's sign you up.");
         
         System.out.println("What is your first name?");
+        String firstName = scan.nextLine();
         
         System.out.println("What is your last name?");
+        String lastName = scan.nextLine();
 
         System.out.println("How old are you?");
+        int age = scan.nextInt();
 
         System.out.println("Make a username");  
-        // If you experience trouble picking up the username, please carefully read the instructions on Learn the Part.
-        
+        scan.nextLine(); //Throwaway nextLine to get around the trap
+        String userName = scan.nextLine();
+
         System.out.println("What city do you live in?");
+        String placeOfResidence = scan.nextLine();
 
         System.out.println("What country is that?");
+        String countryOfResidence = scan.nextLine();
         
         System.out.println("Thank you for joining JavaGram!");
         System.out.println("\nHere is the information you entered:");
-        System.out.println("\tFirst Name: <firstName>");
-        System.out.println("\tLast Name: <lastName>");
-        System.out.println("\tAge: <age>");
-        System.out.println("\tUsername: <userName>");
-        System.out.println("\tCity: <city>");
-        System.out.println("\tCountry: <country>");
+        System.out.println("\tFirst Name: "+firstName);
+        System.out.println("\tLast Name: "+lastName);
+        System.out.println("\tAge: "+age);
+        System.out.println("\tUsername: "+userName);
+        System.out.println("\tCity: "+placeOfResidence);
+        System.out.println("\tCountry: "+countryOfResidence);
 
         //close scanner. It's good practice :D ! 
     }
