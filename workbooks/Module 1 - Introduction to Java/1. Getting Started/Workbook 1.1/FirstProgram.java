@@ -1,5 +1,3 @@
-import java.io.Console;
-
 public class FirstProgram{
     public static void main (String[] args) throws Exception{
         System.out.println("Printing is fun!");
